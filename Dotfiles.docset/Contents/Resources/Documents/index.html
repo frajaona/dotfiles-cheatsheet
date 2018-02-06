@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<title>Tmux-Neovim config</title>
+<link href='style.css' rel='stylesheet'>
+<link href='//dash_ref/Category/Neovim/1'>
+<link href='//dash_ref_Neovim/Entry/Open previously opened file buffer/0'>
+<link href='//dash_ref_Neovim/Entry/Switch to next buffer/0'>
+<link href='//dash_ref_Neovim/Entry/Switch to previous buffer/0'>
+<link href='//dash_ref_Neovim/Entry/Go to .../0'>
+<link href='//dash_ref_Neovim/Entry/Toggle file tree/0'>
+<link href='//dash_ref_Neovim/Entry/Jump to next/0'>
+<link href='//dash_ref_Neovim/Entry/Jump to next/0'>
+<link href='//dash_ref_Neovim/Entry/Scroll up 1 line/0'>
+<link href='//dash_ref_Neovim/Entry/Scroll down 1 line/0'>
+<link href='//dash_ref_Neovim/Entry/Scroll up 1%2F2 page/0'>
+<link href='//dash_ref_Neovim/Entry/Scroll down 1%2F2 page/0'>
+<link href='//dash_ref_Neovim/Entry/Cancel/0'>
+<link href='//dash_ref_Neovim/Entry/Redo/0'>
+<link href='//dash_ref_Neovim/Entry/Split screen horizontally/0'>
+<link href='//dash_ref_Neovim/Entry/Split screen vertically/0'>
+<link href='//dash_ref_Neovim/Entry/Switch to split left, down, up, right/0'>
+<link href='//dash_ref_Neovim/Entry/Search in directory (grep)/0'>
+<link href='//dash_ref_Neovim/Entry/Toggle quickfix list/0'>
+<link href='//dash_ref_Neovim/Entry/Toggle location list/0'>
+<link href='//dash_ref_Neovim/Entry/Go to file tree/0'>
+<link href='//dash_ref_Neovim/Entry/Go to end of line/0'>
+<link href='//dash_ref_Neovim/Entry/Go to the first non-blank character of the line/0'>
+<link href='//dash_ref_Neovim/Entry/Go to the first character of the line/0'>
+<link href='//dash_ref_Neovim/Entry/Toggle tag bar/0'>
+<link href='//dash_ref/Category/Tmux/1'>
+<link href='//dash_ref_Tmux/Entry/Open new tab/0'>
+<link href='//dash_ref_Tmux/Entry/Close pane (and tab if only one pane)/0'>
+<link href='//dash_ref_Tmux/Entry/Open new vertical split in current directory/0'>
+<link href='//dash_ref_Tmux/Entry/Open new vertical split in current directory/0'>
+<link href='//dash_ref_Tmux/Entry/Switch to split left, down, up, right/0'>
+<link href='//dash_ref_Tmux/Entry/See all windows (tabs)/0'>
+</head>
+<body>
+<header>
+<h1>Tmux-Neovim config</h1>
+</header>
+<article>
+<p></p>
+<section class='category'>
+<h2 id='//dash_ref/Category/Neovim/1'>
+Neovim
+</h2>
+<div class='scrollable'>
+<table>
+<tr id='//dash_ref_Neovim/Entry/Open previously opened file buffer/0'>
+<td class='command'>
+<p>
+<code>&lt;Space&gt;&lt;Space&gt;</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Open previously opened file buffer</p>
+</div>
+<div class='notes'></div>
+</td>
+</tr>
+<tr id='//dash_ref_Neovim/Entry/Switch to next buffer/0'>
+<td class='command'>
+<p>
+<code>&lt;Tab&gt;</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Switch to next buffer</p>
+</div>
+<div class='notes'></div>
+</td>
+</tr>
+<tr id='//dash_ref_Neovim/Entry/Switch to previous buffer/0'>
+<td class='command'>
+<p>
+<code>&lt;Shift&gt;&lt;Tab&gt;</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Switch to previous buffer</p>
+</div>
+<div class='notes'></div>
+</td>
+</tr>
+<tr id='//dash_ref_Neovim/Entry/Go to .../0'>
+<td class='command'>
+<p>
+<code>&lt;Space&gt;t</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Go to ...</p>
+</div>
+<div class='notes'><p>Use <Ctrl>f to switch between search modes</p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Neovim/Entry/Toggle file tree/0'>
+<td class='command'>
+<p>
+<code>&lt;Space&gt;`</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Toggle file tree</p>
+</div>
+<div class='notes'></div>
+</td>
+</tr>
+<tr id='//dash_ref_Neovim/Entry/Jump to next/0'>
+<td class='command'>
+<p>
+<code>f&lt;key&gt;</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Jump to next <key></p>
+</div>
+<div class='notes'><p>Use F to jump to previous. Repeat to jump to following match</p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Neovim/Entry/Jump to next/0'>
+<td class='command'>
+<p>
+<code>s&lt;key&gt;&lt;key&gt;</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Jump to next <key><key></p>
+</div>
+<div class='notes'><p>Use S to jump to previous. Repeat to jump to following match</p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Neovim/Entry/Scroll up 1 line/0'>
+<td class='command'>
+<p>
+<code>&lt;Ctrl&gt;y</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Scroll up 1 line</p>
+</div>
+<div class='notes'></div>
+</td>
+</tr>
+<tr id='//dash_ref_Neovim/Entry/Scroll down 1 line/0'>
+<td class='command'>
+<p>
+<code>&lt;Ctrl&gt;e</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Scroll down 1 line</p>
+</div>
+<div class='notes'></div>
+</td>
+</tr>
+<tr id='//dash_ref_Neovim/Entry/Scroll up 1%2F2 page/0'>
+<td class='command'>
+<p>
+<code>&lt;Ctrl&gt;u</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Scroll up 1/2 page</p>
+</div>
+<div class='notes'></div>
+</td>
+</tr>
+<tr id='//dash_ref_Neovim/Entry/Scroll down 1%2F2 page/0'>
+<td class='command'>
+<p>
+<code>&lt;Ctrl&gt;d</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Scroll down 1/2 page</p>
+</div>
+<div class='notes'></div>
+</td>
+</tr>
+<tr id='//dash_ref_Neovim/Entry/Cancel/0'>
+<td class='command'>
+<p>
+<code>u</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Cancel</p>
+</div>
+<div class='notes'></div>
+</td>
+</tr>
+<tr id='//dash_ref_Neovim/Entry/Redo/0'>
+<td class='command'>
+<p>
+<code>&lt;Ctrl&gt;R</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Redo</p>
+</div>
+<div class='notes'></div>
+</td>
+</tr>
+<tr id='//dash_ref_Neovim/Entry/Split screen horizontally/0'>
+<td class='command'>
+<p>
+<code>&lt;Space&gt;-</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Split screen horizontally</p>
+</div>
+<div class='notes'></div>
+</td>
+</tr>
+<tr id='//dash_ref_Neovim/Entry/Split screen vertically/0'>
+<td class='command'>
+<p>
+<code>&lt;Space&gt;|</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Split screen vertically</p>
+</div>
+<div class='notes'></div>
+</td>
+</tr>
+<tr id='//dash_ref_Neovim/Entry/Switch to split left, down, up, right/0'>
+<td class='command'>
+<p>
+<code>&lt;Space&gt;&lt;keypad&gt;</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Switch to split left, down, up, right</p>
+</div>
+<div class='notes'></div>
+</td>
+</tr>
+<tr id='//dash_ref_Neovim/Entry/Search in directory (grep)/0'>
+<td class='command'>
+<p>
+<code>&lt;Ctrl&gt;f</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Search in directory (grep)</p>
+</div>
+<div class='notes'></div>
+</td>
+</tr>
+<tr id='//dash_ref_Neovim/Entry/Toggle quickfix list/0'>
+<td class='command'>
+<p>
+<code>&lt;Space&gt;q</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Toggle quickfix list</p>
+</div>
+<div class='notes'><p>Seach panel use quickfix list</p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Neovim/Entry/Toggle location list/0'>
+<td class='command'>
+<p>
+<code>&lt;Space&gt;l</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Toggle location list</p>
+</div>
+<div class='notes'></div>
+</td>
+</tr>
+<tr id='//dash_ref_Neovim/Entry/Go to file tree/0'>
+<td class='command'>
+<p>
+<code>:Ex</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Go to file tree</p>
+</div>
+<div class='notes'></div>
+</td>
+</tr>
+<tr id='//dash_ref_Neovim/Entry/Go to end of line/0'>
+<td class='command'>
+<p>
+<code>$</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Go to end of line</p>
+</div>
+<div class='notes'></div>
+</td>
+</tr>
+<tr id='//dash_ref_Neovim/Entry/Go to the first non-blank character of the line/0'>
+<td class='command'>
+<p>
+<code>^</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Go to the first non-blank character of the line</p>
+</div>
+<div class='notes'><p>Double tap on ^ to validate on some systems</p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Neovim/Entry/Go to the first character of the line/0'>
+<td class='command'>
+<p>
+<code>0</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Go to the first character of the line</p>
+</div>
+<div class='notes'></div>
+</td>
+</tr>
+<tr>
+<td class='description' colspan='2'>
+<div class='name'></div>
+<div class='notes'><ul>
+<li><code>ESC + v</code> to enter visual mode (selection mode)</li>
+<li>press <code>y</code> to copy
+
+<ul>
+<li>press <code>d</code> to delete (cut)</li>
+<li>press <code>c</code> to delete and enter edit mode</li>
+</ul></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Neovim/Entry/Toggle tag bar/0'>
+<td class='command'>
+<p>
+<code>&lt;F8&gt;</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Toggle tag bar</p>
+</div>
+<div class='notes'></div>
+</td>
+</tr>
+</table>
+</div>
+</section>
+<section class='category'>
+<h2 id='//dash_ref/Category/Tmux/1'>
+Tmux
+</h2>
+<div class='scrollable'>
+<table>
+<tr id='//dash_ref_Tmux/Entry/Open new tab/0'>
+<td class='command'>
+<p>
+<code>&lt;Ctrl&gt;t</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Open new tab</p>
+</div>
+<div class='notes'><p>use T to open in same directory</p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Tmux/Entry/Close pane (and tab if only one pane)/0'>
+<td class='command'>
+<p>
+<code>&lt;Ctrl&gt;w</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Close pane (and tab if only one pane)</p>
+</div>
+<div class='notes'></div>
+</td>
+</tr>
+<tr id='//dash_ref_Tmux/Entry/Open new vertical split in current directory/0'>
+<td class='command'>
+<p>
+<code>&lt;Ctrl&gt;&lt;Space&gt;|</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Open new vertical split in current directory</p>
+</div>
+<div class='notes'></div>
+</td>
+</tr>
+<tr id='//dash_ref_Tmux/Entry/Open new vertical split in current directory/0'>
+<td class='command'>
+<p>
+<code>&lt;Ctrl&gt;&lt;Space&gt;_</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Open new vertical split in current directory</p>
+</div>
+<div class='notes'></div>
+</td>
+</tr>
+<tr id='//dash_ref_Tmux/Entry/Switch to split left, down, up, right/0'>
+<td class='command'>
+<p>
+<code>&lt;Ctrl&gt;&lt;Space&gt;&lt;keypad&gt;</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Switch to split left, down, up, right</p>
+</div>
+<div class='notes'></div>
+</td>
+</tr>
+<tr id='//dash_ref_Tmux/Entry/See all windows (tabs)/0'>
+<td class='command'>
+<p>
+<code>&lt;Ctrl&gt;&lt;Space&gt;w</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>See all windows (tabs)</p>
+</div>
+<div class='notes'></div>
+</td>
+</tr>
+<tr>
+<td class='description' colspan='2'>
+<div class='name'></div>
+<div class='notes'><p>Scrolling</p>
+
+<ul>
+<li>Ctrl+Space [ to enter scrolling mode</li>
+<li>q to exit scrolling mode</li>
+<li>Space to start selecting text</li>
+<li>Enter to copy selected text</li>
+<li>Ctrl+Space ] to paste selected text</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</section>
+</article>
+<footer>
+Generated with <a onclick="window.dash.openExternal_(this.href); return false;" href='https://github.com/Kapeli/cheatset#readme'>cheatset</a>
+</footer>
+</body>
+</html>
